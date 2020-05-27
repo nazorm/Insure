@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.desktop-left, .desktop-right, .introDesktop-image, .intro-text hr, .howWeWork-desktop, .desktopFooter-pattern, .desktophead{
+display: none;
+}
+.nav-bar{
+    display: none;
+    background-color: hsl(270, 9%, 17%);
+    text-align: center;
+    padding:50px 0 0 ;
+}
+.nav-bar a{
+    display: block;
+    color: white;
+   margin-bottom: 5%;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase; 
+  font-family: 'Karla', sans-serif;
+}
+.nav-bar button{
+    width: 80%;
+    margin-bottom: 80px;
+}
+.nav-bar img{
+width: 100%;
+}
+.introMobile-image{
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.mobileheader{
+    width: 100%;
+    padding:  5%;
+    display: flex;
+    justify-content: space-between;
+}
+.mobilelogo{
+    height: 1rem; 
+    margin-top: 2%; 
+}
+.hamburger{
+    height: 1rem;
+}
+.intro-section{
+    text-align: center;
+    position: relative;
+    
+}
+.intro-text{
+    position: relative;
+    background-color: hsl(256, 26%, 20%);
+    margin-top: 0;
+    padding:  80px 0 80px;
+}
+.mobile-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.mobile-right{
+    position: absolute;
+    right: 3%;
+    top: 70%;
+
+}
+h1, h2{
+    color: hsl(0, 0%, 98%);
+    margin: 0;
+    font-weight: 300;
+    font-size: 40px;
+    padding: 0 30px 5px;
+    font-family: 'DM Serif Display', serif;
+}
+.intro-text p{
+    color: hsl(0, 0%, 98%);
+    line-height: 160%;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    padding: 0 14px 0;
+}
+.btn, .nav-bar button{
+    background-color: transparent;
+    color: hsl(0, 0%, 98%);
+    font-family: 'Karla', sans-serif;
+    border: 1px solid hsl(0, 0%, 98%);
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+.feature-section{
+    text-align: center;
+    padding: 100px 0;
+}
+hr{
+    border: 1px solid hsl(216, 30%, 68%);
+  margin: 0 80px 20px;
+}
+h3{
+    font-family: 'DM Serif Display', serif;   
+    font-weight: 300;
+    font-size: 40px;
+    color: hsl(270, 9%, 17%);
+}
+h4{
+    font-family: 'DM Serif Display', serif;   
+    font-weight: 300;
+    font-size: 20px;
+    color: hsl(270, 9%, 17%);
+}
+.feature-image{
+    width: 20%;
+}
+.feature p{
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 0 10px 10px;
+    color: hsl(273, 4%, 51%);
+}
+
+.howWeWork-mobile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+.howWeWork{
+    margin: 0 10px 40px;
+    text-align: center;
+    position: relative;
+    background-color: hsl(256, 26%, 20%);
+    padding:  60px 0 60px;
+}
+.howWeWork button{
+margin-top: 5%;
+}
+.footer-one{
+    text-align: center;
+    position: relative;
+    margin: 40% 0 20%;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    padding: 80px 0 30px;
+}
+.footer-one div{
+    margin-bottom: 5%;
+}
+.footer-one a{
+    margin-left: 4%;
+}
+
+.mobileFooter-pattern{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.footer-two{
+text-align: center;
+padding: 0 0 80px;
+}
+.ul p{
+    color: hsl(273, 4%, 51%);
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 10% 0 5%;
+    font-size: 20px;
+    
+
+}
+.ul a{
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    color: hsl(270, 9%, 17%);
+    line-height: 200%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*Desktop Styles*/
+@media only screen and (min-width: 960px){
+    .mobile-left, .mobile-right, .introMobile-image, .howWeWork-mobile, .mobileFooter-pattern, .mobileheader{
+        display: none;
+    }
+
+
+            .desktophead{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                padding: 15px 40px;
+            }
+            .desktoplogo{
+                height: 1.8rem;
+            }
+            .desktopnav-bar, .desktopnav-bar a {
+                word-spacing: 2em;
+                text-decoration: none;
+                text-decoration: none;
+                color: hsl(273, 4%, 51%);
+                font-family: 'Karla', sans-serif;
+                font-size: 20px;
+            }
+            .desktopnav-bar a:hover{
+                cursor: pointer;
+                color: hsl(270, 9%, 17%);
+            }
+            .desktopnav-bar button:hover{
+                cursor: pointer;
+                background-color: hsl(270, 9%, 17%);
+                color: hsl(0, 0%, 98%);
+            }
+            .desktopnav-bar button{
+                background-color: transparent;
+                color: hsl(270, 9%, 17%);
+                font-size: 16px;
+                font-weight: 700;
+                font-family: 'Karla', sans-serif;
+                border: 1px solid hsl(270, 9%, 17%);;
+                padding: 10px 20px;
+                text-transform: uppercase; 
+            }
+
+            .intro-section{
+                width: 100%;
+                position: relative;
+                margin-bottom: 10%;
+            }
+            .intro-text{
+                padding-left: 5%;
+                text-align: start;
+                position: relative;
+            }
+            h1{
+                padding: 20px 1100px 0 30px;  
+            }
+            .intro-text p{
+                padding: 30px 1000px 0 30px;
+            }
+            .intro-text button{
+                margin: 2% 0 0 2%;
+            }
+            .intro-text button:hover, .howWeWork button:hover{
+                cursor: pointer;
+                color:hsl(270, 9%, 17%) ;
+                background-color:  hsl(0, 0%, 98%) ;
+            }
+            .intro-text hr{
+                display: block;
+                width: 150px;
+                margin-left: 2%;
+            }
+            .introDesktop-image{
+                display: inline;
+                position: absolute;
+                height: 550px;
+                top: 15%;
+                z-index: 1;
+            }
+            .desktop-left{
+                display: inline;
+                position: absolute;
+                left: 0;
+                top: 72%;
+                width: 10%;
+            }
+            .desktop-right{
+                display: inline;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+            }
+
+.feature-section{
+    text-align: start;
+    
+}
+.feature-section hr{
+                display: block;
+                width: 150px;
+                margin-left: 7%;
+}
+h3{
+    margin: 2% 0 2% 7%;
+}
+.features p{
+    text-align: start;
+    padding: 0 80px 0 0;
+}
+.features h4{
+    margin-bottom: 2%;
+}
+.features{
+    display: flex;
+    margin-left: 7%;
+}
+.feature-image{
+    width: 15%;
+    margin-bottom: 2%;
+}
+.howWeWork{
+position: relative;
+margin: 0 100px;
+padding: 40px 0 30px;
+}
+.howWeWork div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 35px 80px;
+}
+.howWeWork h2{
+    margin: 0;
+    text-align: start;
+    padding: 0  750px 0 50px;
+}
+.howWeWork button{
+    align-self: center;
+    margin: 0;
+    width: 300px;
+    padding: 10px;
+}
+
+.howWeWork button:hover{
+cursor: pointer;
+}
+.howWeWork-desktop{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer{
+    margin-top: 0;
+    position: relative;
+  background-color: hsl(0, 0%, 98%);
+    padding-bottom: 40px;
+}
+.footer-one{
+    justify-content: space-between;
+    position: relative;
+    margin: 5% 0 1%;
+    display: flex;
+    padding: 70px 100px 0;
+}
+.footer-one  div img{
+    z-index: 2;
+}
+.footer-one a{
+    margin: 0;
+}
+.footer-one a:hover{
+cursor: pointer;
+}
+.desktopFooter-pattern{
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    } 
+.footer-two{
+    display: flex;
+    text-align: start;
+    padding: 0 200px 0 0;
+    justify-content: space-evenly;
+}
+.footer-two a{
+    text-align: start;
+}
+.footer-two a:hover{
+    cursor: pointer;
+    text-decoration: underline;   
+}
+.ul{
+    padding-right: 150px;
+}
+}
+
